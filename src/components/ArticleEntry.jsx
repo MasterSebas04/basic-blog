@@ -18,7 +18,7 @@ export default function ArticleEntry({ addArticle }) {
   return (
     <div>
       <form onSubmit={submit}>
-        {error && <p className="error">{error}</p>}
+        {error && <p className="error">{error}</p>} 
         Title
         <input value={title} onChange={(e) => setTitle(e.target.value)} />
         Body
