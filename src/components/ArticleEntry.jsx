@@ -18,6 +18,7 @@ export default function ArticleEntry({ addArticle }) {
   return (
     <div>
       <form onSubmit={submit}>
+
         {error && <p className="error">{error}</p>} 
         Title
         <input value={title} onChange={(e) => setTitle(e.target.value)} />
@@ -27,7 +28,7 @@ export default function ArticleEntry({ addArticle }) {
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
-        <button type="submit">Create</button>
+        <button type="submit">Post</button>
       </form>
     </div>
   )

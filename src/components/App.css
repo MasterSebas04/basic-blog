@@ -1,12 +1,23 @@
+@font-face{
+  font-family: Kollektif;
+  src: url("Kollektif.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: Gidole;
+  src: url("Gidole-Regular.ttf") format("truetype");
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Gidole', sans-serif;
+
 }
 
 .App {
   display: grid;
   grid-template-rows: min-content auto;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 175px auto;
   height: 100vh;
   overflow: scroll;
 }
@@ -14,10 +25,14 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   background-color: black;
   color: white;
   grid-column: 1 / span 2;
   padding: 10px 5px;
+  font-size: 50pt;
+  font-family: 'Kollektif', sans-serif;
+  flex-shrink: 40;
 }
 
 form {
@@ -37,10 +52,13 @@ nav,
 article {
   height: 100%;
   padding: 10px;
+  font-size: 18pt;
 }
 
 nav {
-  background-color: #dee9ff;
+  background-color: black;
+  color: white
+
 }
 
 nav p:hover {
@@ -61,3 +79,60 @@ article .body {
   color: gold;
   padding: 5px;
 }
+
+.button-background {
+  font-family: 'Gidole', sans-serif;
+  background-position: center bottom;
+  font-size: 15pt;
+  background-image: url('/makeBlog.jpg');
+  background-size: 100%;
+  background: fill;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  filter: saturate(150%);
+  display: flex;
+  align-items: flex-end;
+  min-width: 500px;
+  border-radius: 4px;
+}
+
+.signIn-Button {
+  width: 33.3%;
+  font-family: 'Gidole', sans-serif;
+  font-size: 15pt;
+  background-position: bottom;
+  background-image: url('/makeBlog.jpg');
+  background-size: 150%;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  filter: saturate(150%);
+  display: flex;
+  align-items: flex-end;
+  border-radius: 4px;
+
+}
+
+.signOut-Button {
+  font-family: 'Gidole', sans-serif;
+  background-position: center;
+  font-size: 15pt;
+  background-image: url('/makeBlog.jpg');
+  background-size: 100%;
+  background: fill;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  filter: saturate(150%);
+  display: flex;
+
+}
+
