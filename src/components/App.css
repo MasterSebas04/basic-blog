@@ -57,7 +57,10 @@ article {
 
 nav {
   background-color: black;
-  color: white
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
 }
 
@@ -83,7 +86,7 @@ article .body {
 .button-background {
   font-family: 'Gidole', sans-serif;
   background-position: center bottom;
-  font-size: 15pt;
+  font-size: pt;
   background-image: url('/makeBlog.jpg');
   background-size: 100%;
   background: fill;
@@ -98,6 +101,7 @@ article .body {
   align-items: flex-end;
   min-width: 500px;
   border-radius: 4px;
+  
 }
 
 .signIn-Button {
@@ -135,4 +139,12 @@ article .body {
   display: flex;
 
 }
+
+.profile-image{
+  display: flex;
+  align-items: flex-end;
+  border-radius: 4px;
+  width: 33.3%;
+}
+
 
