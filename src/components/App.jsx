@@ -35,9 +35,12 @@ export default function App() {
   return (
     <div className="App">
       <header>
-        Blog*
+        <div className = "title-name">
+          Blog*
+        </div>
         {user && <button onClick={() => setWriting(true)} className="button-background">(Click to make) New Blog </button>}
         {!user ? <SignIn /> : <SignOut />}
+
         
       </header>
 
